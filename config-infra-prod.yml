@@ -7,16 +7,16 @@ variables:
   # Global
   ap_vm_image: ubuntu-20.04
 
-  namespace: mlopsv2
+  namespace: panda
   postfix: 0518
-  location: westus
+  location: northcentralus
   environment: prod
   enable_aml_computecluster: true
   enable_monitoring: true
   
   # Azure DevOps 
-  ado_service_connection_rg: Azure-ARM-Prod
-  ado_service_connection_aml_ws: Azure-ARM-Prod
+  ado_service_connection_rg: Technicalpanda_Mlops_Prod
+  ado_service_connection_aml_ws: Technicalpanda_Mlops_Prod
 
   # IaC
   resource_group: rg-$(namespace)-$(postfix)$(environment)
